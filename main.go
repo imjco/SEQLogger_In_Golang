@@ -118,7 +118,7 @@ func (l *SEQLogger) Log(level, message string, fields map[string]interface{}) {
 
 func main() {
 	seqURL := "http://localhost:5341/api/events/raw" // SEQ server URL
-	apiKey := "UXPaXrJsDNCRHpEc9EuZ"                 // SEQ server API key
+	apiKey := "YourAPIKey"                           // SEQ server API key
 
 	logger := NewSEQLogger(seqURL, apiKey, 100) // Buffer size of 100 for the log channel
 	// Example usage with more logs
